@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mission Shrestha</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header wrap">
+    <h1>Mission Shrestha</h1>
+    <h3>Contact</h3>
+  </header>
+
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="brand" href="index.html">Mission</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+    <section>
+      <h2>Contact information</h2>
+      <p>Email: <span class="placeholder">shresthamission99@gmail.com</span></p>
+      <p>Phone: <span class="placeholder">+1 (343) 988-9193.</span></p>
+      <p>
+        <a href="https://github.com/Strazci-wq">GitHub — Strazci-wq</a><br>
+        <a href="https://www.linkedin.com/in/mission-shrestha-3a0428370/">LinkedIn — Mission Shrestha</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Send a note</h2>
+      <p class="note">This form is a front-end demonstration. It does not send messages, because no form service or backend is configured.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your details</legend>
+          <p>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </p>
+          <p>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="">Select a country</option>
+              <option value="canada">Canada</option>
+              <option value="united-states">United States</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <label class="choice"><input type="radio" name="gender" value="woman"> Woman</label>
+          <label class="choice"><input type="radio" name="gender" value="man"> Man</label>
+          <label class="choice"><input type="radio" name="gender" value="prefer-not"> Prefer not to say</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Interests</legend>
+          <label class="choice"><input type="checkbox" name="interests" value="backend"> Backend development</label>
+          <label class="choice"><input type="checkbox" name="interests" value="web"> Web applications</label>
+          <label class="choice"><input type="checkbox" name="interests" value="databases"> Databases</label>
+          <label class="choice"><input type="checkbox" name="interests" value="systems"> Computer systems</label>
+        </fieldset>
+
+        <p>
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required>
+        </p>
+        <p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <p><a class="back" href="index.html">Back to home</a></p>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>&copy; 2026 Mission Shrestha. Personal portfolio.</p>
+  </footer>
+</body>
+</html>
