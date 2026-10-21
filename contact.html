@@ -14,11 +14,12 @@
 
   <nav class="nav-bar" aria-label="Primary">
     <a class="brand" href="index.html">Mission</a>
-    <ul>
+    <button id="menu-btn" type="button">Menu</button>
+    <ul id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="education.html">Education</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html">Experience</a></li>
       <li><a href="contact.html" aria-current="page">Contact</a></li>
     </ul>
   </nav>
@@ -36,8 +37,8 @@
 
     <section>
       <h2>Send a note</h2>
-      <p class="note">This form is a front-end demonstration. It does not send messages, because no form service or backend is configured.</p>
-      <form action="#" method="post">
+      <p id="form-note" class="note">This form is a front-end demonstration. It does not send messages.</p>
+      <form id="contact-form" action="#" method="post">
         <fieldset>
           <legend>Your details</legend>
           <p>
@@ -84,7 +85,8 @@
         </p>
         <p>
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
+          <textarea id="message" name="message" rows="6" maxlength="200" required></textarea>
+          <span id="count">0 / 200</span>
         </p>
         <button type="submit">Submit</button>
       </form>
@@ -93,7 +95,8 @@
   </main>
 
   <footer class="site-footer wrap">
-    <p>&copy; 2026 Mission Shrestha. Personal portfolio.</p>
+    <p>&copy; <span id="year">2026</span> Mission Shrestha. Personal portfolio.</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

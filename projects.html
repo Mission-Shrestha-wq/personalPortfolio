@@ -3,62 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Mission Shrestha</title>
+  <title>Experience | Mission Shrestha</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header wrap">
     <h1>Mission Shrestha</h1>
-    <h3>Projects</h3>
+    <h3>Experience</h3>
   </header>
 
   <nav class="nav-bar" aria-label="Primary">
     <a class="brand" href="index.html">Mission</a>
-    <ul>
+    <button id="menu-btn" type="button">Menu</button>
+    <ul id="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="education.html">Education</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="projects.html" aria-current="page">Experience</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <main class="wrap">
-    <p class="note">Repository links are omitted because confirmed project URLs were not provided. The GitHub profile is linked from Home and Contact.</p>
     <div class="cards">
       <article>
-        <h3><mark>Refrigerator Monitoring System</mark></h3>
+        <h3><mark>UnitedHealthcare</mark></h3>
+        <p>Software Engineer – Java Full Stack · 2025 – present</p>
         <p>
-          Stratosfy internship project with a team of five interns.<br>
-          Built logic on top of existing restaurant refrigerator monitoring software.<br>
-          Analyzed temperature data to identify potential open-door, power-loss, and overstocking conditions.<br>
-          Integrated the functionality with the existing server and worked on email and phone notifications,<br>
-          with a focus on adding features without disrupting the existing system.
+          Claims and member applications with Java 17, Spring Boot, Angular, Oracle,
+          Docker, Kubernetes, Jenkins, and AWS.
         </p>
       </article>
-
       <article>
-        <h3><mark>Temperature Anomaly Detector</mark></h3>
+        <h3><mark>T-Mobile</mark></h3>
+        <p>Java Full Stack Developer, part time · 2023 – 2024</p>
         <p>
-          Analyzed temperature readings from a CSV dataset using Python.<br>
-          Explored patterns associated with door openings, power loss, defrost cycles, overstocking, and sensor drift.<br>
-          Worked on identifying unusual temperature changes using thresholds and rates of change.
+          Spring Boot services, Angular 8, Oracle, AWS EC2 and S3, Tomcat, and WebLogic.
         </p>
       </article>
-
       <article>
-        <h3><mark>Veterinary Clinic Web Application</mark></h3>
+        <h3><mark>Cedar Gates Technologies</mark></h3>
+        <p>Java Developer · 2022 – 2023</p>
         <p>
-          Academic web application using ASP.NET Core MVC and C#.<br>
-          Demonstrates web development, application structure, and database-related concepts.
-        </p>
-      </article>
-
-      <article>
-        <h3><mark>Jakarta EE Slider Game</mark></h3>
-        <p>
-          College web application project using Java enterprise technologies.<br>
-          Demonstrates web application development and interactive functionality.
+          Spring MVC, Angular, Sencha Ext JS, JMS, ActiveMQ, Oracle, MySQL, Docker, and Jenkins.
         </p>
       </article>
     </div>
@@ -66,7 +53,8 @@
   </main>
 
   <footer class="site-footer wrap">
-    <p>&copy; 2026 Mission Shrestha. Personal portfolio.</p>
+    <p>&copy; <span id="year">2026</span> Mission Shrestha. Personal portfolio.</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -9,60 +9,84 @@
 <body>
   <header class="site-header wrap">
     <h1>Mission Shrestha</h1>
-    <h3>Computer Engineering Technology Graduate | Aspiring Software Developer</h3>
+    <h3>Java Full Stack Developer | Ottawa, ON</h3>
   </header>
-
 
   <nav class="nav-bar" aria-label="Primary">
     <a class="brand" href="index.html">Mission</a>
-    <ul>
+    <button id="menu-btn" type="button">Menu</button>
+    <ul id="menu">
       <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="education.html">Education</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html">Experience</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <main class="wrap">
     <section class="hero">
-      <img class="profile" src="images/avatar.png">
+      <img class="profile" src="images/avatar.png" alt="Mission Shrestha">
       <div>
         <div class="hello-note">
-          <p>Hello. I like building useful software, and I am still figuring out the fun parts along the way.</p>
+          <p id="greeting">Hello.</p>
+          <p>Java full stack developer. I build web applications from the database through the user interface.</p>
         </div>
         <p>
-          I am a <strong>Computer Engineering Technology</strong> graduate from
-          <em>Algonquin College</em> in Ottawa, Ontario. I am interested in
-          <mark>software development</mark>, backend programming, web applications,
-          databases, and computer systems.
+          I work with <strong>Java</strong>, <mark>Spring Boot</mark>, REST APIs, Hibernate, and
+          <strong>Angular</strong>. I also use Docker, Kubernetes, Jenkins, and AWS.
+          I studied Computer Engineering Technology at <em>Algonquin College</em> in Ottawa.
         </p>
       </div>
     </section>
 
     <section>
-      <h2>Experience</h2>
+      <h2>Professional summary</h2>
       <p>
-        <strong>Software Development Intern</strong> at Stratosfy. I worked with a team of
-        five interns on existing restaurant refrigerator monitoring software. I developed
-        logic to identify potential open-door, power-loss, and overstocking conditions from
-        temperature data, integrated that functionality with the existing server, and worked
-        on customer notifications through email and phone.
+        I design, build, and deploy enterprise applications. Recent work includes healthcare
+        claims services, customer account features, and internal tools. I write Java services,
+        Angular screens, SQL, and tests, and I work in Agile teams.
       </p>
     </section>
 
     <section>
-      <h2>Career goal</h2>
-      <p>
-        Build <mark>practical software</mark> that solves real-world problems.
-        Code, coursework, and project notes live on
-        <a href="https://github.com/Strazci-wq">github.com/Strazci-wq</a>.
-      </p>
+      <h2>Experience</h2>
+
+      <h3>Software Engineer – Java Full Stack</h3>
+      <p><strong>UnitedHealthcare</strong>, Minnetonka, MN · 2025 – present</p>
+      <button class="toggle-details" type="button">Show details</button>
+      <ul hidden>
+        <li>Spring Boot microservices with Spring Security, OAuth 2.0, and JWT for claims and member applications.</li>
+        <li>REST APIs documented with Swagger/OpenAPI.</li>
+        <li>Hibernate and Spring Data JPA on Oracle, plus SQL and PL/SQL.</li>
+        <li>Angular components, JUnit, Mockito, Docker, Kubernetes, Jenkins, and AWS CloudWatch.</li>
+      </ul>
+
+      <h3>Java Full Stack Developer</h3>
+      <p><strong>T-Mobile</strong> (part time) · 2023 – 2024</p>
+      <button class="toggle-details" type="button">Show details</button>
+      <ul hidden>
+        <li>Front-end and back-end features in Agile sprints.</li>
+        <li>Spring Boot microservices, Spring Security, Hibernate, and Angular 8.</li>
+        <li>Docker on AWS EC2, data in S3, deployments on Tomcat and WebLogic.</li>
+        <li>JUnit, Mockito, Git, and GitHub pull requests.</li>
+      </ul>
+
+      <h3>Java Developer</h3>
+      <p><strong>Cedar Gates Technologies</strong> · 2022 – 2023</p>
+      <button class="toggle-details" type="button">Show details</button>
+      <ul hidden>
+        <li>Spring Boot, Spring MVC, Sencha Ext JS, jQuery, HTML, and CSS for internal tools.</li>
+        <li>Account creation as an Angular single-page application.</li>
+        <li>REST APIs, JMS with ActiveMQ, Docker, Kubernetes, and Jenkins.</li>
+        <li>Oracle, MySQL, Maven, Log4j, and JUnit.</li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer wrap">
-    <p>&copy; 2026 Mission Shrestha. Personal portfolio.</p>
+    <p>&copy; <span id="year">2026</span> Mission Shrestha. Personal portfolio.</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

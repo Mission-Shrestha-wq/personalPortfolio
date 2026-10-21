@@ -1,4 +1,4 @@
-/* Shared styles. No JavaScript. */
+/* Shared styles. */
 :root {
   --bg: #fff6ee;
   --card: #ffffff;
@@ -71,6 +71,17 @@ a:hover { color: var(--coral); }
   font-weight: 700;
   color: var(--coral);
   text-decoration: none;
+}
+
+#menu-btn {
+  display: none;
+  padding: 0.35rem 0.7rem;
+  border: 2px solid #243044;
+  border-radius: 999px;
+  background: #fff;
+  font: inherit;
+  font-weight: 700;
+  box-shadow: none;
 }
 
 .nav-bar ul {
@@ -229,6 +240,8 @@ button {
 
 @media (max-width: 720px) {
   .hero { grid-template-columns: 1fr; }
-  .nav-bar ul { width: 100%; }
+  #menu-btn { display: inline-block; }
+  .nav-bar ul { display: none; width: 100%; }
+  .nav-bar ul.open { display: flex; }
   table { display: block; overflow-x: auto; }
 }
